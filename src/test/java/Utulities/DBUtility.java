@@ -18,13 +18,13 @@ public class DBUtility {
             ResultSetMetaData rsmd = rs.getMetaData(); // kolon sayısı
 
             // kolon isimleri tablonun ilk satırına eklendi
-            /*
+
             ArrayList<String> kolonSatiri = new ArrayList<>();
             for (int i = 1; i <= rsmd.getColumnCount(); i++)
                 kolonSatiri.add(rsmd.getColumnName(i));
             tablo.add(kolonSatiri);
 
-             */
+
 
             while (rs.next()) {
 

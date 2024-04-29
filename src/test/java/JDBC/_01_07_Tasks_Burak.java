@@ -11,7 +11,7 @@ public class _01_07_Tasks_Burak extends DBUtility {
 
     @Test
     public void Task1() {
-        List<List<String>> dbList = getListData("SELECT * FROM employees INNER JOIN dept_emp ON employees.emp_no = dept_emp.emp_no WHERE dept_no = 'D001' LIMIT 20000;");
+        List<List<String>> dbList = getListData("SELECT * FROM employees INNER JOIN dept_emp ON employees.emp_no = dept_emp.emp_no WHERE dept_no = 'D001' LIMIT 10000;");
 
         System.out.println("**** List all employees in department D001 ****");
         System.out.println();
@@ -20,8 +20,6 @@ public class _01_07_Tasks_Burak extends DBUtility {
             for (int j = 0; j < dbList.get(i).size(); j++) {
                 System.out.print(dbList.get(i).get(j) + " ");
             }
-            if (dbList.get(i).get(2).contains("Elgin")){
-                break;
             System.out.println();
         }
     }
